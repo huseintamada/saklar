@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Stopkontak</title>
+</head>
+
+<body>
+
+    <!-- lampu 1 -->
+    <div>
+        <img src="asets/images/off.gif" alt="" id="Lampu1" />
+        <h1>Stopkontak</h1>
+        <button onclick="saklar('on')">Nyalakan Lampu</button>
+        <button onclick="saklar('off')">Matikan Lampu</button>
+    </div>
+
+    <!-- lampu 2 -->
+    <div>
+        <img src="asets/images/off.gif" alt="" id="Lampu2" />
+        <h1>Stopkontak</h1>
+        <button onclick="saklar('on')">Nyalakan Lampu</button>
+        <button onclick="saklar('off')">Matikan Lampu</button>
+    </div>
+
+    <!-- lampu 3 -->
+    <div>
+        <img src="asets/images/off.gif" alt="" id="Lampu3" />
+        <h1>Stopkontak</h1>
+        <button onclick="saklar('on')">Nyalakan Lampu</button>
+        <button onclick="saklar('off')">Matikan Lampu</button>
+    </div>
+
+    <!-- Script -->
+    <script>
+        function saklar(params) {
+            console.log(params);
+            let Lampu1 = document.getElementById('Lampu1');
+            if (params === 'on') {
+                Lampu1.src = 'asets/images/on.gif';
+            } else if (params === 'off') {
+                Lampu1.src = 'asets/images/off.gif';
+            }
+            return Lampu1;
+        }
+    </script>
+</body>
+
+</html>
